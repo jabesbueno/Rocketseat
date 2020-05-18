@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <button onclick="preenherLista()">Lista</button>
+        <ul id="Foo">
+        </ul>
+    </div>
+    <script>
+        function preenherLista() {
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+            var boxElement = document.querySelector('#Foo');
+
+            for (let value of nomes) {
+                var li = document.createElement('li');
+                li.innerHTML = value;
+                boxElement.appendChild(li);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

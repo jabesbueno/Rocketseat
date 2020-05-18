@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+    <script>
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        function retornaObjeto(endereco) {
+            console.log("O usuário mora em " + endereco.cidade + "/" + endereco.uf + ", no bairro " + endereco.bairro + " na rua" + endereco.rua + " com nº" + endereco.numero);
+        }
+
+        setTimeout(retornaObjeto(endereco), 2000);
+    </script>
+</body>
+
+</html>
